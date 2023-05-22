@@ -165,3 +165,20 @@
 
 
 
+function tpChecker(home) {
+    let a= Math.floor((home.tp*500)/(home.people*57))
+    return a>14?`Your TP will last ${a} days, no need to panic!`:`Your TP will only last ${a} days, buy more!`
+    }
+
+
+
+    function findIt(obj, name) {
+	
+        return Object.keys(obj).includes(name)?`${name[0].toUpperCase()+name.slice(1)} is gone...`:`${name[0].toUpperCase()+name.slice(1)} is here!`
+    }
+
+
+
+    function getDistance(a, b) {
+        return + Math.hypot(a.x-b.x, a.y-b.y).toFixed(3)
+    }
